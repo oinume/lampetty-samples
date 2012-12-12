@@ -1,4 +1,4 @@
-package net.lampetty.samples;
+package net.lampetty.samples.logback;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
