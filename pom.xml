@@ -23,6 +23,15 @@
                 <checksumPolicy>ignore</checksumPolicy>
             </releases>
         </repository>
+        
+        <repository>
+            <id>lampetty-commons-github</id>
+            <url>https://raw.github.com/oinume/lampetty-commons/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
     </repositories>
 
     <build>
@@ -37,6 +46,12 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>net.lampetty</groupId>
+            <artifactId>lampetty-commons</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -67,6 +82,12 @@
             <artifactId>commons-beanutils</artifactId>
             <version>1.8.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
         
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -84,7 +105,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
 
