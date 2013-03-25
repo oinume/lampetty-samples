@@ -13,9 +13,9 @@ import org.slf4j.LoggerFactory;
  * equalsメソッドを下記方法によって実装してベンチマークをとる。
  * 
  * <ul>
- * <li>通常の実装</li>
- * <li>commons-langのEqualsBuilder</li>
- * <li>commons-langのEqualsBuilder(reflectionEquals)</li>
+ * <li>EqualsBuilderを使わない普通の実装</li>
+ * <li>EqualsBuilderを使った実装</li>
+ * <li>EqualsBuilder.reflectionEqualsを使った実装</li>
  * </ul>
  */
 public class EqualsBenchmark {
