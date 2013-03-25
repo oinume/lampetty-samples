@@ -16,6 +16,7 @@
     </properties>
 
     <repositories>
+
         <repository>
             <id>jmockit-svn</id>
             <url>http://jmockit.googlecode.com/svn/maven-repo</url>
@@ -32,6 +33,17 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
+        
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <layout>default</layout>
+            <url>http://files.couchbase.com/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        
     </repositories>
 
     <build>
@@ -69,6 +81,12 @@
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.19</version>
+        </dependency>
+
+        <dependency>
+            <groupId>spy</groupId>
+            <artifactId>spymemcached</artifactId>
+            <version>2.8.4</version>
         </dependency>
 
         <dependency>
@@ -112,7 +130,7 @@
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
-            <version>1.1</version>
+            <version>1.3</version>
             <scope>test</scope>
         </dependency>
 
