@@ -14,7 +14,13 @@
         </layout>
     </appender>
     
-    <root level="${root-level:-info}">
+    <!-- 
+    <root level="${root-level:-debug}">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+    -->
+    <root level="debug">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
