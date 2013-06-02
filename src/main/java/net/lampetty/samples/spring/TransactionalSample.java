@@ -2,6 +2,7 @@ package net.lampetty.samples.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import net.lampetty.samples.spring.UserService;
 
@@ -15,7 +16,6 @@ public class TransactionalSample {
     }
 
     // create table user (id integer not null auto_increment, name varchar(255), primary key (id));
-    @Transactional
     public void run(String[] args) throws Exception {
         @SuppressWarnings("resource")
         ApplicationContext context = new ClassPathXmlApplicationContext("database.xml");
