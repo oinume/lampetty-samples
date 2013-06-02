@@ -1,4 +1,4 @@
-package net.lampetty.samples;
+package net.lampetty.samples.benchmark;
 
 import java.util.ArrayList;
 import java.util.Date;

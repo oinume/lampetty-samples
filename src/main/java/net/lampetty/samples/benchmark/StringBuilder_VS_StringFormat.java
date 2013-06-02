@@ -1,4 +1,4 @@
-package net.lampetty.samples;
+package net.lampetty.samples.benchmark;
 
 /**
  * StringBulder V.S. String.format to concat strings.
