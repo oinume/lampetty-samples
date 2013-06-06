@@ -9,6 +9,7 @@ import net.lampetty.samples.spring.mvc.form.UserForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -39,7 +40,7 @@ public class FormController {
         
         // データベースの更新とか
         
-        // 終わったら完了画面へリダイレクト
+        // 終わったら完了画面へ
         return "redirect:/form/complete";
     }
     

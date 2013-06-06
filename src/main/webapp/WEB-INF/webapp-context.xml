@@ -18,8 +18,6 @@
     http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util-3.2.xsd
-    http://www.springframework.org/schema/task
-    http://www.springframework.org/schema/task/spring-task-3.2.xsd
 ">
 
     <!-- SpringMVC のアノテーションを有効化する。 -->

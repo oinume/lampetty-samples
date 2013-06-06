@@ -15,7 +15,9 @@
 <label>User name</label>
 <input type="text" name="${spring.status.expression}" placeholder="your name" value="${spring.status.value?default("")}">
 <@spring.showErrors "<br>", "color:red" />
+<div>
 <button type="submit" class="btn">Submit</button>
+</div>
 </fieldset>
 </form>
 </div>
