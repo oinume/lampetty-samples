@@ -16,7 +16,9 @@
 <label class="control-label" for="name">Name</label>
 <div class="controls">
 <input type="text" id="name" name="${spring.status.expression}" placeholder="Name" value="${spring.status.value?default("")}">
-<@spring.showErrors "<br>", "color:red" />
+<#if spring.status.error>
+<p><@spring.showErrors "<br>", "color:red" /></p>
+</#if>
 </div>
 </div>
 <!-- email -->
@@ -25,7 +27,9 @@
 <label class="control-label" for="email">Email</label>
 <div class="controls">
 <input type="text" id="email" name="${spring.status.expression}" placeholder="Email" value="${spring.status.value?default("")}">
-<@spring.showErrors "<br>", "color:red" />
+<#if spring.status.error>
+<p><@spring.showErrors "<br>", "color:red" /></p>
+</#if>
 </div>
 </div>
 <div class="control-group">
