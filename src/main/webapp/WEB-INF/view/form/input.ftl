@@ -1,5 +1,6 @@
 <#import "/spring.ftl" as spring />
 <!DOCTYPE html>
+<#escape __x as __x?html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -42,3 +43,4 @@
 </div><!-- /div.container -->
 </body>
 </html>
+</#escape>
