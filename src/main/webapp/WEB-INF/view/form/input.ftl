@@ -8,18 +8,33 @@
 </head>
 <body>
 <div class="container">
+<form class="form-horizontal" method="POST" action="/form/process">
+<legend>JSR-303 Bean Validation</legend>
+<!-- name -->
 <@spring.bind "userForm.name" />
-<form method="POST" action="/form/process">
-<fieldset>
-<legend>フォーム</legend>
-<label>User name</label>
-<input type="text" name="${spring.status.expression}" placeholder="your name" value="${spring.status.value?default("")}">
+<div class="control-group">
+<label class="control-label" for="name">Name</label>
+<div class="controls">
+<input type="text" id="name" name="${spring.status.expression}" placeholder="Name" value="${spring.status.value?default("")}">
 <@spring.showErrors "<br>", "color:red" />
-<div>
-<button type="submit" class="btn">Submit</button>
 </div>
-</fieldset>
+</div>
+<!-- email -->
+<@spring.bind "userForm.email" />
+<div class="control-group">
+<label class="control-label" for="email">Email</label>
+<div class="controls">
+<input type="text" id="email" name="${spring.status.expression}" placeholder="Email" value="${spring.status.value?default("")}">
+<@spring.showErrors "<br>", "color:red" />
+</div>
+</div>
+<div class="control-group">
+<div class="controls">
+<button type="submit" name="send" class="btn">送信</button>
+</div>
+</div>
 </form>
-</div>
+
+</div><!-- /div.container -->
 </body>
 </html>
