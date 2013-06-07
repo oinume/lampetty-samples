@@ -12,22 +12,20 @@
 <form class="form-horizontal" method="POST" action="/form/process">
 <legend>JSR-303 Bean Validation</legend>
 <!-- name -->
-<@spring.bind "userForm.name" />
 <div class="control-group">
 <label class="control-label" for="name">Name</label>
 <div class="controls">
-<input type="text" id="name" name="${spring.status.expression}" placeholder="Name" value="${spring.status.value?default("")}">
+<@spring.formInput 'userForm.name' 'id="name" placeholder="Name"' />
 <#if spring.status.error>
 <p><@spring.showErrors "<br>", "color:red" /></p>
 </#if>
 </div>
 </div>
 <!-- email -->
-<@spring.bind "userForm.email" />
 <div class="control-group">
 <label class="control-label" for="email">Email</label>
 <div class="controls">
-<input type="text" id="email" name="${spring.status.expression}" placeholder="Email" value="${spring.status.value?default("")}">
+<@spring.formInput 'userForm.email' 'id="email" placeholder="Email"' />
 <#if spring.status.error>
 <p><@spring.showErrors "<br>", "color:red" /></p>
 </#if>
