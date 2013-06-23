@@ -2,6 +2,8 @@
 .settings
 .classpath
 .project
+.idea
+*.iml
 rebel.xml
 target
 *.class
