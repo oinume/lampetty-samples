@@ -7,6 +7,9 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
+/**
+ * 正規表現とstartsWithによるパターンマッチングのベンチマーク。
+ */
 public class Regexp_VS_StartsWith {
 
     public static void main(String[] args) {

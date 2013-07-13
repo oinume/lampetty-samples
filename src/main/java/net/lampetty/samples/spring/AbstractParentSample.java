@@ -16,4 +16,5 @@ public class AbstractParentSample {
         System.out.println("url = " + dataSource.getUrl());
         //Connection c = dataSource.getConnection();
     }
+    
 }
