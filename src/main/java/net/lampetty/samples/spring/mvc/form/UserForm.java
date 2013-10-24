@@ -1,5 +1,6 @@
 package net.lampetty.samples.spring.mvc.form;
 
+import javax.validation.constraints.Max;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
@@ -11,7 +12,7 @@ public class UserForm {
     @Size(max = 10)
     private String name;
     
-    @NotEmpty
+    @NotEmpty(message = "Emailは必須です")
     @Size(max = 255)
     @Email
     private String email;
